@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ritiktiwari.netlify.app/sitemap.xml
