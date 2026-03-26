@@ -119,3 +119,18 @@ document.getElementById("contact-form").addEventListener("submit", function(e) {
     });
 });
 
+// ===== SCROLL ANIMATION ENGINE =====
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show-anim");
+    }
+  });
+}, {
+  threshold: 0.15
+});
+
+document.querySelectorAll('.hidden-anim').forEach(el => {
+  observer.observe(el);
+});

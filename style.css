@@ -192,3 +192,37 @@
 }
 
 /* ===== END ===== */
+/* ===== SCROLL ANIMATION ===== */
+
+.hidden-anim {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.show-anim {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* left animation */
+.left-anim {
+  transform: translateX(-60px);
+}
+
+/* right animation */
+.right-anim {
+  transform: translateX(60px);
+}
+
+/* scale animation */
+.scale-anim {
+  transform: scale(0.8);
+}
+
+/* when visible */
+.show-anim.left-anim,
+.show-anim.right-anim,
+.show-anim.scale-anim {
+  transform: translateX(0) scale(1);
+}

@@ -54,7 +54,7 @@
   <div id="particles-container" aria-hidden="true"></div>
 
   <!-- Header / Nav -->
-  <header>
+  <header class="hidden-anim">
     <nav class="glass p-3 rounded-xl">
       <div class="brand neon">ER.RITIK</div>
       <div class="nav-links">
@@ -68,7 +68,7 @@
   </header>
 
   <!-- HERO -->
-  <section id="home" class="hero">
+  <section id="home" class="hero hidden-anim">
     <div class="hero-card glass rounded-2xl mx-auto">
       <div class="holo"></div>
       <div class="hero-grid">
@@ -78,10 +78,10 @@
           <p class="muted mt-3">Frontend Developer · IT Student · Cybersecurity Enthusiast</p>
           <p class="muted mt-4">Transforming ideas into interactive experiences — web apps, DSA solutions, and secure systems.</p>
           <div class="mt-6 flex flex-wrap gap-3">
-            <a class="btn-cyber" href="#projects">ACCESS PROJECTS</a>
-            <a class="btn-cyber" href="#contact">ESTABLISH LINK</a>
+            <a class="btn-cyber hidden-anim" href="#projects">ACCESS PROJECTS</a>
+            <a class="btn-cyber hidden-anim" href="#contact">ESTABLISH LINK</a>
             <!-- Resume download -->
-            <a class="btn-cyber" href="./Fin.pdf" download style="border-color:var(--mg); color:var(--mg);">DOWNLOAD RESUME</a>
+            <a class="btn-cyber hidden-anim" href="./Fin.pdf" download style="border-color:var(--mg); color:var(--mg);">DOWNLOAD RESUME</a>
           </div>
 
           <div class="mt-6 text-xs font-mono text-cyan-200">
@@ -92,7 +92,7 @@
         </div>
 
         <!-- Hologram / Avatar column -->
-        <div class="avatar-box" style="display:flex;align-items:center;justify-content:center;">
+        <div class="avatar-box " style="display:flex;align-items:center;justify-content:center;">
           <div class="card rounded-full glass" style="width:320px;height:320px;display:flex;align-items:center;justify-content:center;position:relative;">
             <svg width="180" height="180" viewBox="0 0 24 24" fill="none" style="opacity:.95">
               <circle cx="12" cy="12" r="10" stroke="rgba(0,240,255,0.12)" stroke-width="1.5">
@@ -108,7 +108,7 @@
   </section>
 
   <!-- ABOUT -->
-  <section id="about">
+  <section id="about" class="hidden-anim">
     <div class="max-w-6xl mx-auto">
       <div class="flex flex-col md:flex-row gap-8 items-start">
         <div class="md:w-2/3">
@@ -148,7 +148,7 @@
   </section>
 
   <!-- SKILLS -->
-  <section id="skills" class="bg-black/20">
+  <section id="skills" class="bg-black/20 hidden-anim">
     <div class="max-w-6xl mx-auto">
       <h2>TECH.STACK</h2>
       <div class="mt-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
@@ -225,7 +225,7 @@
         </article-->
 
         <!-- To-Do App -->
-        <article class="project-card card">
+        <article class="project-card card hidden-anim">
           <div class="text-xs font-mono text-cyan-200">PROJECT_001</div>
           <h3 class="neon mt-1">To-Do List App</h3>
           <p class="muted mt-2">Vanilla JS task manager with localStorage, filters, and animations — great practice for state & UI.</p>
@@ -236,7 +236,7 @@
         </article>
 
         <!-- Quiz App -->
-        <article class="project-card card">
+        <article class="project-card card hidden-anim">
           <div class="text-xs font-mono text-cyan-200">PROJECT_002</div>
           <h3 class="neon mt-1">Quiz Application</h3>
           <p class="muted mt-2">JS-based quiz with timer, scoring and question bank — used for practice & interviews prep.</p>
@@ -257,7 +257,7 @@
         </article-->
 
         <!-- portfolio -->
-        <article class="project-card card">
+        <article class="project-card card hidden-anim">
   <div class="text-xs font-mono text-cyan-200">PROJECT_003</div>
   <h3 class="neon mt-1">Personal Portfolio</h3>
   <p class="muted mt-2">
@@ -285,7 +285,7 @@
           </div>
         </article-->
         <!-- Price Range Slider -->
-<article class="project-card card">
+<article class="project-card card hidden-anim">
   <div class="text-xs font-mono text-cyan-200">PROJECT_004</div>
   <h3 class="neon mt-1">Price Range Slider (Interactive UI)</h3>
   <p class="muted mt-2">
@@ -297,7 +297,7 @@
   </div>
 </article>
 <!-- Resume ATS Checker -->
-<article class="project-card card">
+<article class="project-card card hidden-anim">
   <div class="text-xs font-mono text-cyan-200">PROJECT_005</div>
   <h3 class="neon mt-1">Resume ATS Checker (AI-Powered)</h3>
   <p class="muted mt-2">
@@ -311,7 +311,7 @@
 </article>
 <!--IMAGE TO URL-->
 <!-- Image Uploader -->
-<article class="project-card card">
+<article class="project-card card hidden-anim">
   <div class="text-xs font-mono text-cyan-200">PROJECT_006</div>
   <h3 class="neon mt-1">Image Uploader (HTML / CSS / JS)</h3>
   <p class="muted mt-2">
@@ -325,7 +325,7 @@
   </div>
 </article>
 <!-- MetalMarketin.in – Full-Stack Platform -->
-<article class="project-card card">
+<article class="project-card card hidden-anim">
   <div class="text-xs font-mono text-cyan-200">PROJECT_007</div>
   <h3 class="neon mt-1">MetalMarketin.in – Full-Stack B2B Metal Marketplace</h3>
 
@@ -347,7 +347,7 @@
     <a class="btn-cyber" href="https://metalmarketin.com/" target="_blank" rel="noopener">Live Project</a>
   </div>
 </article>
-<article class="project-card card">
+<article class="project-card card hidden-anim">
   <div class="text-xs font-mono text-cyan-200">PROJECT_008</div>
   <h3 class="neon mt-1">Arshiv World – Admission Counselling Platform</h3>
   <p class="muted mt-2">
@@ -366,7 +366,7 @@
     </a>
   </div>
 </article>
-<article class="project-card card">
+<article class="project-card card hidden-anim">
   <div class="text-xs font-mono text-cyan-200">PROJECT_009</div>
   <h3 class="neon mt-1">ABES Java Code Editor – Custom Java IDE with Embedded Tomcat</h3>
   <p class="muted mt-2">
@@ -391,7 +391,7 @@
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="bg-black/10">
+  <section id="contact" class="bg-black/10 hidden-anim">
     <div class="max-w-4xl mx-auto">
       <h2>COMM.LINK</h2>
       <div class="mt-6 grid md:grid-cols-2 gap-6">
