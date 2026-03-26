@@ -119,7 +119,7 @@
   border-radius: 18px; /* smooth rounded box */
   display: none;
   flex-direction: column;
-  box-shadow: 0 0 15px #0ff;
+  box-shadow: 0 0 1px #0ff;
   z-index: 9999;
 }
 
@@ -157,7 +157,7 @@
 }
 
 .chat-input button {
-  background: #0ff;
+  background: rgb(0, 0, 0);
   border: none;
   padding: 8px 10px;
   cursor: pointer;
@@ -168,15 +168,15 @@
   margin: 5px 0; 
 }
 
-.bot { color: #0f0; }
-.user { color: #fff; text-align: right; }
+.bot { color: rgb(101, 63, 117); }
+.user { color: #9998d2; text-align: right; }
 
 .btn {
   display: block;
   margin: 5px 0;
   padding: 6px;
   background: transparent;
-  border: 1px solid #0ff;
+  border: 1px solid rgb(34, 49, 49);
   color: #0ff;
   cursor: pointer;
   text-align: center;

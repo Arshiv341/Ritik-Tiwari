@@ -487,12 +487,12 @@
   </div>
 </div>
 <!-- ARSHIV AI END -->
-
-
-  <script src="script.js"></script>
-  <script>
+<script src="script.js"></script>
+ <script>
 let userName = localStorage.getItem("name") || "";
+let userLang = localStorage.getItem("lang") || "";
 
+/* TOGGLE CHAT */
 function toggleChat() {
   let box = document.getElementById("chatBox");
   box.style.display = box.style.display === "flex" ? "none" : "flex";
@@ -504,6 +504,7 @@ function toggleChat() {
   }
 }
 
+/* ADD MESSAGE */
 function addMessage(text, sender="bot") {
   let chat = document.getElementById("chatBody");
   let div = document.createElement("div");
@@ -513,6 +514,7 @@ function addMessage(text, sender="bot") {
   chat.scrollTop = chat.scrollHeight;
 }
 
+/* TYPING EFFECT */
 function typeMessage(text) {
   let chat = document.getElementById("chatBody");
   let div = document.createElement("div");
@@ -530,18 +532,68 @@ function typeMessage(text) {
   typing();
 }
 
+/* START CHAT */
 function startChat() {
   setTimeout(() => {
-    if(userName){
-      typeMessage(`Welcome back ${userName} 👀`);
-      showOptions();
-    } else {
-      typeMessage("⚡Hii I am suzu.");
-      setTimeout(()=> typeMessage("Kya aap apna naam bata sakte hain?"),600);
+
+    // STEP 1: Ask language
+    if (!userLang) {
+      typeMessage("⚡ SUZU");
+      setTimeout(() => {
+        addMessage(`
+          <div class="btn" onclick="setLang('en')">English</div>
+          <div class="btn" onclick="setLang('hi')">हिंदी</div>
+        `);
+      }, 500);
+      return;
     }
-  }, 400);
+
+    // STEP 2: Ask name
+    if (!userName) {
+      askName();
+      return;
+    }
+
+    // STEP 3: Welcome back
+    if (userLang === "hi") {
+      typeMessage(`Welcome back ${userName} 👀`);
+    } else {
+      typeMessage(`Welcome back ${userName}.`);
+    }
+
+    showOptions();
+
+  }, 300);
 }
 
+/* SET LANGUAGE */
+function setLang(lang) {
+  userLang = lang;
+  localStorage.setItem("lang", lang);
+
+  document.getElementById("chatBody").innerHTML = "";
+
+  typeMessage("⚡suzu");
+
+  if (lang === "hi") {
+    setTimeout(() => typeMessage("Hii, Main suzu hu."), 400);
+    setTimeout(() => typeMessage("Kya aap apna naam bata sakte hain?"), 900);
+  } else {
+    setTimeout(() => typeMessage("Hii, I am suzu."), 400);
+    setTimeout(() => typeMessage("May I know your name?"), 900);
+  }
+}
+
+/* ASK NAME */
+function askName() {
+  if (userLang === "hi") {
+    typeMessage("Kya aap apna naam bata sakte hain?");
+  } else {
+    typeMessage("May I know your name?");
+  }
+}
+
+/* SEND MESSAGE */
 function sendMessage() {
   let input = document.getElementById("userInput");
   let msg = input.value.trim();
@@ -550,65 +602,82 @@ function sendMessage() {
   addMessage(msg, "user");
   input.value = "";
 
-  if (!userName) {
+  // Name capture
+  if (!userName && userLang) {
     userName = msg;
     localStorage.setItem("name", userName);
 
-    setTimeout(() => {
-      typeMessage(`${userName}, welcome to Ritik's portfolio 🚀`);
-      showOptions();
-    }, 400);
+    if (userLang === "hi") {
+      setTimeout(() => {
+        typeMessage(`${userName}, welcome Ritik ke portfolio me 🚀`);
+        showOptions();
+      }, 400);
+    } else {
+      setTimeout(() => {
+        typeMessage(`${userName}, welcome to Ritik's portfolio.`);
+        setTimeout(()=> typeMessage("How can I assist you today?"),400);
+        showOptions();
+      }, 400);
+    }
   }
 }
 
+/* OPTIONS */
 function showOptions() {
-  addMessage(`
-    <div class="btn" onclick="website()">💻 Website Banwana</div>
-    <div class="btn" onclick="contact()">📞 Contact Karna</div>
-    <div class="btn" onclick="skills()">🧠 Skills & Experience</div>
-    <div class="btn" onclick="restartChat()">🔄 Restart</div>
-  `);
+  if (userLang === "hi") {
+    addMessage(`
+      <div class="btn" onclick="website()">💻 Website Banwana</div>
+      <div class="btn" onclick="contact()">📞 Contact Karna</div>
+      <div class="btn" onclick="skills()">🧠 Skills</div>
+      <div class="btn" onclick="restartChat()">🔄 Restart</div>
+    `);
+  } else {
+    addMessage(`
+      <div class="btn" onclick="website()">💻 Build a Website</div>
+      <div class="btn" onclick="contact()">📞 Contact</div>
+      <div class="btn" onclick="skills()">🧠 Skills & Experience</div>
+      <div class="btn" onclick="restartChat()">🔄 Restart</div>
+    `);
+  }
 }
 
+/* WEBSITE */
 function website() {
-  typeMessage("🔥 Ritik ne multiple real-world projects banaye hain jaise B2B platforms aur AI tools.");
-  addMessage("• MetalMarketin<br>• ATS Resume Checker<br>• Arshiv World Platform");
-  addMessage(`<a class="btn" href="https://wa.me/9140378625?text=Hi Ritik, mujhe website banwani hai" target="_blank">🚀 WhatsApp Kare</a>`);
-  typeMessage("⚡ Fastest response ke liye WhatsApp best hai.");
+  if (userLang === "hi") {
+    typeMessage("Ritik ne real-world projects banaye hain jaise B2B platforms aur AI tools.");
+    addMessage("• MetalMarketin<br>• ATS Resume Checker<br>• Arshiv World");
+    addMessage(`<a class="btn" href="https://wa.me/9140378625?text=Hi Ritik, mujhe website banwani hai" target="_blank">🚀 WhatsApp Kare</a>`);
+  } else {
+    typeMessage("Ritik has built real-world projects including B2B platforms and AI tools.");
+    addMessage("• MetalMarketin<br>• ATS Resume Checker<br>• Arshiv World");
+    addMessage(`<a class="btn" href="https://wa.me/9140378625?text=Hi Ritik, I want to build a website" target="_blank">🚀 Connect on WhatsApp</a>`);
+  }
 }
 
-function projects() {
-  addMessage(`
-    <div class="btn">Web Apps</div>
-    <div class="btn">AI Tools</div>
-    <div class="btn">Full Stack Projects</div>
-  `);
-}
-
+/* CONTACT */
 function contact() {
   typeMessage("📩 Email: drritik341@gmail.com");
-  typeMessage("📍 Ghaziabad, India");
-  typeMessage("⏱ Response: within 48 hours");
+  typeMessage("📍 Location: Ghaziabad, India");
+  typeMessage("⏱ Response Time: within 48 hours");
 }
 
+/* SKILLS */
 function skills() {
   addMessage(`
-    ⚡ Frontend: HTML, CSS, JS, ReactJS, TailwindCSS, Bootstrap, EmailJS<br>
-    ⚡ Backend: Java, MySQL, NodeJs<br>
-    ⚡ Cybersecurity: Ethical Hacking<br>
-    ⚡ Experience: Intern + Founder
+    ⚡ Frontend: HTML, CSS, JS, React<br>
+    ⚡ Backend: Java, MySQL, Node.js<br>
+    ⚡ Cybersecurity: Ethical Hacking
   `);
 }
 
-function restartChat(){
+/* RESET */
+function restartChat() {
   document.getElementById("chatBody").innerHTML = "";
   userName = "";
-  localStorage.removeItem("name");
+  userLang = "";
+  localStorage.clear();
   startChat();
 }
-
 </script>
-  
-
 </body>
 </html>
