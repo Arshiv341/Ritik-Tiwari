@@ -475,9 +475,139 @@
 
   </div>
 </footer>
+<!-- ARSHIV AI START -->
+<div class="chat-btn" onclick="toggleChat()">⚡ AI</div>
+
+<div class="chat-box" id="chatBox">
+  <div class="chat-header">⚡Suzu AI</div>
+  <div class="chat-body" id="chatBody"></div>
+  <div class="chat-input">
+    <input type="text" id="userInput" placeholder="Type...">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+</div>
+<!-- ARSHIV AI END -->
 
 
   <script src="script.js"></script>
+  <script>
+let userName = localStorage.getItem("name") || "";
+
+function toggleChat() {
+  let box = document.getElementById("chatBox");
+  box.style.display = box.style.display === "flex" ? "none" : "flex";
+  box.style.flexDirection = "column";
+
+  if (!box.dataset.started) {
+    startChat();
+    box.dataset.started = true;
+  }
+}
+
+function addMessage(text, sender="bot") {
+  let chat = document.getElementById("chatBody");
+  let div = document.createElement("div");
+  div.className = "message " + sender;
+  div.innerHTML = text;
+  chat.appendChild(div);
+  chat.scrollTop = chat.scrollHeight;
+}
+
+function typeMessage(text) {
+  let chat = document.getElementById("chatBody");
+  let div = document.createElement("div");
+  div.className = "message bot";
+  chat.appendChild(div);
+
+  let i = 0;
+  function typing() {
+    if (i < text.length) {
+      div.innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typing, 15);
+    }
+  }
+  typing();
+}
+
+function startChat() {
+  setTimeout(() => {
+    if(userName){
+      typeMessage(`Welcome back ${userName} 👀`);
+      showOptions();
+    } else {
+      typeMessage("⚡Hii I am suzu.");
+      setTimeout(()=> typeMessage("Kya aap apna naam bata sakte hain?"),600);
+    }
+  }, 400);
+}
+
+function sendMessage() {
+  let input = document.getElementById("userInput");
+  let msg = input.value.trim();
+  if (!msg) return;
+
+  addMessage(msg, "user");
+  input.value = "";
+
+  if (!userName) {
+    userName = msg;
+    localStorage.setItem("name", userName);
+
+    setTimeout(() => {
+      typeMessage(`${userName}, welcome to Ritik's portfolio 🚀`);
+      showOptions();
+    }, 400);
+  }
+}
+
+function showOptions() {
+  addMessage(`
+    <div class="btn" onclick="website()">💻 Website Banwana</div>
+    <div class="btn" onclick="contact()">📞 Contact Karna</div>
+    <div class="btn" onclick="skills()">🧠 Skills & Experience</div>
+    <div class="btn" onclick="restartChat()">🔄 Restart</div>
+  `);
+}
+
+function website() {
+  typeMessage("🔥 Ritik ne multiple real-world projects banaye hain jaise B2B platforms aur AI tools.");
+  addMessage("• MetalMarketin<br>• ATS Resume Checker<br>• Arshiv World Platform");
+  addMessage(`<a class="btn" href="https://wa.me/9140378625?text=Hi Ritik, mujhe website banwani hai" target="_blank">🚀 WhatsApp Kare</a>`);
+  typeMessage("⚡ Fastest response ke liye WhatsApp best hai.");
+}
+
+function projects() {
+  addMessage(`
+    <div class="btn">Web Apps</div>
+    <div class="btn">AI Tools</div>
+    <div class="btn">Full Stack Projects</div>
+  `);
+}
+
+function contact() {
+  typeMessage("📩 Email: drritik341@gmail.com");
+  typeMessage("📍 Ghaziabad, India");
+  typeMessage("⏱ Response: within 48 hours");
+}
+
+function skills() {
+  addMessage(`
+    ⚡ Frontend: HTML, CSS, JS, ReactJS, TailwindCSS, Bootstrap, EmailJS<br>
+    ⚡ Backend: Java, MySQL, NodeJs<br>
+    ⚡ Cybersecurity: Ethical Hacking<br>
+    ⚡ Experience: Intern + Founder
+  `);
+}
+
+function restartChat(){
+  document.getElementById("chatBody").innerHTML = "";
+  userName = "";
+  localStorage.removeItem("name");
+  startChat();
+}
+
+</script>
   
 
 </body>

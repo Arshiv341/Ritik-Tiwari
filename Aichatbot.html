@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arshiv AI - Single File</title>
+
+<style>
+body {
+  margin:0;
+  font-family: 'Courier New', monospace;
+  background:#000;
+}
+
+.chat-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #0ff;
+  color: #000;
+  padding: 12px 18px;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 0 15px #0ff;
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 10px #0ff; }
+  to { box-shadow: 0 0 25px #0ff; }
+}
+
+.chat-box {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 340px;
+  height: 480px;
+  background: rgba(0,0,0,0.85);
+  backdrop-filter: blur(10px);
+  border: 1px solid #0ff;
+  border-radius: 10px;
+  display: none;
+  flex-direction: column;
+  box-shadow: 0 0 20px #0ff;
+}
+
+.chat-header {
+  padding: 10px;
+  background: #000;
+  color: #0ff;
+  border-bottom: 1px solid #0ff;
+}
+
+.chat-body {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  color: #0f0;
+  font-size: 13px;
+}
+
+.chat-input {
+  display: flex;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.chat-input button {
+  background: #0ff;
+  border: none;
+  padding: 10px;
+  cursor:pointer;
+}
+
+.message { margin: 6px 0; }
+.bot { color: #0f0; }
+.user { color: #fff; text-align: right; }
+
+.btn {
+  display: block;
+  margin: 6px 0;
+  padding: 8px;
+  background: transparent;
+  border: 1px solid #0ff;
+  color: #0ff;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn:hover {
+  background: #0ff;
+  color: #000;
+}
+</style>
+</head>
+
+<body>
+
+<div class="chat-btn" onclick="toggleChat()">⚡ AI</div>
+
+<div class="chat-box" id="chatBox">
+  <div class="chat-header">⚡ ARSHIV AI</div>
+  <div class="chat-body" id="chatBody"></div>
+  <div class="chat-input">
+    <input type="text" id="userInput" placeholder="Type...">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+</div>
+
+
+
+</body>
+</html>
