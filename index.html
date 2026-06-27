@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Ritik Tiwari | Portfolio | Web Developer</title>
-  <meta name="description" content="Hi, I'm Ritik Tiwari — a passionate web developer,software developer skilled in HTML, CSS, JavaScript, and Python. Explore my portfolio, projects, and skills.">
-  <meta name="keywords" content="Ritik Tiwari, Ritik Tiwari Portfolio, Web Developer, Frontend Developer, JavaScript Developer, Ritik Tiwari Ghaziabad, IT Student, Ritik Tiwari Website, Ritik Tiwari Netlify, Ritik Tiwari Developer,Ritik Tiwari Software developer, Ritik Tiwari Software engineer">
+  <title>Ritik Tiwari | AI Engineer & Full Stack Developer Portfolio</title>
+  <meta name="description" content="Hi, I'm Ritik Tiwari — a professional AI Engineer & Full Stack Developer building production-grade AI-powered applications. Creator of EvalAI (AI-powered Answer Sheet Evaluation Platform).">
+  <meta name="keywords" content="Ritik Tiwari, Ritik Tiwari Portfolio, AI Engineer, Full Stack Developer, Software Engineer, EvalAI, machine learning developer, handwritten evaluation AI, Gemini API, OCR projects, ABES Engineering College, Web Developer">
   <meta name="author" content="Ritik Tiwari">
   <meta name="robots" content="index, follow">
 
@@ -20,17 +20,46 @@
   <link rel="icon" type="image/png" href="favicon.png">
 
   <!-- ✅ OG Tags (Social Media Preview) -->
-  <meta property="og:title" content="Ritik Tiwari | Web Developer Portfolio">
-  <meta property="og:description" content="Explore my portfolio — projects, skills, and experience in web development, cybersecurity, and design.">
+  <meta property="og:title" content="Ritik Tiwari | AI Engineer & Full Stack Developer">
+  <meta property="og:description" content="Explore my engineering portfolio — highlighting production-grade AI applications, EvalAI (AI+OCR platform), and scalable Full Stack systems.">
   <meta property="og:image" content="https://ritiktiwari.netlify.app/image.png">
   <meta property="og:url" content="https://ritiktiwari.netlify.app/">
   <meta property="og:type" content="website">
 
   <!-- ✅ Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Ritik Tiwari | Portfolio">
-  <meta name="twitter:description" content="Frontend Developer · IT Student · Cybersecurity Enthusiast">
+  <meta name="twitter:title" content="Ritik Tiwari | AI Engineer & Full Stack Developer">
+  <meta name="twitter:description" content="AI Engineer · Full Stack Developer · Creator of EvalAI">
   <meta name="twitter:image" content="https://ritiktiwari.netlify.app/image.png">
+
+  <!-- ✅ Structured Data (Schema.org JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ritik Tiwari",
+    "url": "https://ritiktiwari.netlify.app/",
+    "jobTitle": "AI Engineer & Full Stack Developer",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "ABES Engineering College"
+    },
+    "sameAs": [
+      "https://github.com/Arshiv341",
+      "https://www.linkedin.com/in/ritik-tiwari-it/"
+    ],
+    "knowsAbout": [
+      "AI Engineering",
+      "Full Stack Development",
+      "React.js",
+      "Node.js",
+      "Google Cloud Vision OCR",
+      "Gemini API",
+      "LLM Integration",
+      "REST APIs"
+    ]
+  }
+  </script>
 
   <!-- ✅ CSS + Fonts -->
   <link rel="stylesheet" href="style.css">
@@ -62,6 +91,8 @@
         <a href="#about">ABOUT</a>
         <a href="#skills">SKILLS</a>
         <a href="#projects">PROJECTS</a>
+        <a href="#achievements">ACHIEVEMENTS</a>
+        <a href="#timeline">JOURNEY</a>
         <a href="#contact">CONNECT</a>
       </div>
     </nav>
@@ -73,21 +104,28 @@
       <div class="holo"></div>
       <div class="hero-grid">
         <div style="padding:1rem 1rem 1rem 1rem; z-index:2;">
+          <div class="mb-4 inline-flex items-center gap-2 px-3 py-1 rounded-full border border-pink-500/30 bg-pink-950/20 text-pink-300 text-xs font-mono tracking-widest uppercase shadow-[0_0_12px_rgba(255,0,224,0.15)]">
+            🚀 Creator of EvalAI
+          </div>
           <div class="text-sm font-mono text-cyan-200 mb-3">SYSTEM → ONLINE</div>
-          <h1 style="font-family: 'Orbitron', monospace; font-size:3.2rem;" class="neon">Hi, I'm <span style="color:var(--mg)" class="neon-mag">ऋतिक तिवारी</span></h1>
-          <p class="muted mt-3">Frontend Developer · IT Student · Cybersecurity Enthusiast</p>
-          <p class="muted mt-4">Transforming ideas into interactive experiences — web apps, DSA solutions, and secure systems.</p>
-          <div class="mt-6 flex flex-wrap gap-3">
-            <a class="btn-cyber hidden-anim" href="#projects">ACCESS PROJECTS</a>
-            <a class="btn-cyber hidden-anim" href="#contact">ESTABLISH LINK</a>
-            <!-- Resume download -->
-            <a class="btn-cyber hidden-anim" href="./Fin.pdf" download style="border-color:var(--mg); color:var(--mg);">DOWNLOAD RESUME</a>
+          <h1 style="font-family: 'Orbitron', monospace; font-size:3.2rem;" class="neon">Hi, I'm <span style="color:var(--mg)" class="neon-mag">Ritik Tiwari</span></h1>
+          
+          <div class="mt-4 flex flex-wrap gap-2 text-xs font-mono">
+            <span class="badge border-cyan-400/20 text-cyan-300">Full Stack Developer</span>
+            <span class="badge border-pink-400/20 text-pink-300">AI Engineer</span>
           </div>
 
-          <div class="mt-6 text-xs font-mono text-cyan-200">
-            <div>&gt; Location: Ghaziabad, India</div>
-            <div>&gt; Role: Frontend / Full-Stack & Cybersecurity</div>
-            <div>&gt; Response: &lt; 48 hours</div>
+          <p class="muted mt-4 text-cyan-100 font-medium">
+            I design and build production-grade AI applications using OCR, LLMs, scalable backend architectures and modern full-stack technologies.
+          </p>
+          <p class="muted mt-2 text-xs font-mono">
+            Creator of <span class="neon-mag font-semibold">EvalAI</span> – AI Powered Handwritten Answer Sheet Evaluation Platform.
+          </p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a class="btn-cyber hidden-anim" href="#featured-project">🚀 View EvalAI</a>
+            <a class="btn-cyber hidden-anim" href="./Fin.pdf" download style="border-color:var(--mg); color:var(--mg);">📄 Resume</a>
+            <a class="btn-cyber hidden-anim" href="https://github.com/Arshiv341" target="_blank" rel="noopener">💻 GitHub</a>
+            <a class="btn-cyber hidden-anim" href="https://www.linkedin.com/in/ritik-tiwari-it/" target="_blank" rel="noopener" style="border-color:var(--mg); color:var(--mg);">🔗 LinkedIn</a>
           </div>
         </div>
 
@@ -96,7 +134,7 @@
           <div class="card rounded-full glass" style="width:320px;height:320px;display:flex;align-items:center;justify-content:center;position:relative;">
             <svg width="180" height="180" viewBox="0 0 24 24" fill="none" style="opacity:.95">
               <circle cx="12" cy="12" r="10" stroke="rgba(0,240,255,0.12)" stroke-width="1.5">
-                <img class="imege" src="./image.png" alt="">
+                <img class="imege" src="./image.png" alt="Ritik Tiwari - Portrait" loading="lazy">
               </circle>
               <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 1H5C3.9 1 3 1.9 3 3V21C3 22.1 3.9 23 5 23H19C20.1 23 21 22.1 21 21V9Z" fill="url(#g)"></path>
             </svg>
@@ -113,18 +151,28 @@
       <div class="flex flex-col md:flex-row gap-8 items-start">
         <div class="md:w-2/3">
           <h2>USER.PROFILE</h2>
-          <p class="muted">I'm <strong>ऋतिक तिवारी</strong>, a B.Tech (3rd year, IT) student with a strong foundation in web development, DSA and cybersecurity. Founder of a counselling platform (running 2 years) and formerly a frontend intern at Saitech Systems — I build responsive websites, JavaScript apps and explore ethical hacking & penetration testing.</p>
+          <p class="muted">
+            I am a **4th-year B.Tech IT** student at **ABES Engineering College**, specializing as a **Full Stack Developer** and **AI Engineer**. Driven by a passion for building robust, **production-grade software**, my expertise lies in designing scalable **backend systems** and integrating cutting-edge **OCR** and **LLM** pipelines. I build intelligent applications that bridge the gap between complex AI capabilities and intuitive, high-performance web experiences.
+          </p>
 
           <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div class="card">
               <div class="text-sm font-mono text-cyan-200 mb-2">Experience</div>
-              <div class="font-semibold neon">Frontend Dev Intern — Saiket Systems</div>
-              <div class="mt-2 muted">Built and optimized responsive UIs; improved performance & accessibility.</div>
+              <div class="font-semibold neon">Frontend Dev Intern — Saitech Systems</div>
+              <div class="mt-2 muted text-xs space-y-1">
+                <div>• Built responsive React interfaces integrated with REST APIs while improving UI performance and maintainability.</div>
+                <div>• Optimized component lifecycles to reduce render overhead and layout shifts.</div>
+                <div>• Developed structured web forms with client-side validation using state management tools.</div>
+              </div>
             </div>
             <div class="card">
-              <div class="text-sm font-mono text-cyan-200 mb-2">Founder</div>
-              <div class="font-semibold neon">Counselling Platform</div>
-              <div class="mt-2 muted">Running since 2 years — operations, mentoring & user engagement.</div>
+              <div class="text-sm font-mono text-cyan-200 mb-2">Creator</div>
+              <div class="font-semibold neon">Creator — EvalAI</div>
+              <div class="mt-2 muted text-xs space-y-1">
+                <div>• Engineered an automated handwritten evaluation system combining Gemini 1.5 Pro and Google Vision OCR.</div>
+                <div>• Established asynchronous queue processing for batch uploads, preventing request timeouts.</div>
+                <div>• Modeled MongoDB schemas and secured backend router endpoints using JWT validation.</div>
+              </div>
             </div>
           </div>
         </div>
@@ -134,12 +182,15 @@
             <div class="text-sm font-mono text-cyan-200 mb-2">Contact</div>
             <div class="font-semibold neon">drritik341@gmail.com</div>
             <div class="muted mt-1">Ghaziabad, India</div>
-            <!-- phone hidden as requested -->
+            <div class="mt-3 pt-3 border-t border-cyan-400/10 text-xs font-mono">
+              <span class="text-green-400 font-semibold">🟢 Currently Open For:</span>
+              <div class="text-[10px] text-cyan-300 mt-1">Software Engineering / AI / Full Stack Internships</div>
+            </div>
           </div>
 
           <div class="card">
             <div class="text-sm font-mono text-cyan-200 mb-2">Education</div>
-            <div class="muted">B.Tech (IT) — ABES Engineering College (3rd Year)</div>
+            <div class="muted">B.Tech (IT) — ABES Engineering College (4th Year)</div>
             <div class="muted mt-1">12th — UP Board | 10th — UP Board</div>
           </div>
         </aside>
@@ -151,53 +202,76 @@
   <section id="skills" class="bg-black/20 hidden-anim">
     <div class="max-w-6xl mx-auto">
       <h2>TECH.STACK</h2>
-      <div class="mt-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
-        <div class="card text-center">
-          <div class="text-2xl neon">HTML</div><div class="muted mt-1">HTML5, Semantics</div>
+      
+      <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <!-- AI & Vision -->
+        <div class="card">
+          <h3 class="text-sm font-mono text-cyan-200 mb-3">// 01. ARTIFICIAL INTELLIGENCE</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="badge border-cyan-400/20">Gemini API</span>
+            <span class="badge border-cyan-400/20">Google Cloud Vision OCR</span>
+            <span class="badge border-cyan-400/20">Prompt Engineering</span>
+            <span class="badge border-cyan-400/20">OpenCV</span>
+            <span class="badge border-cyan-400/20">AI Workflow Automation</span>
+          </div>
         </div>
-        <div class="card text-center">
-          <div class="text-2xl neon">CSS</div><div class="muted mt-1">Tailwind, Bootstrap, Responsive</div>
-        </div>
-        <div class="card text-center">
-          <div class="text-2xl neon">JS</div><div class="muted mt-1">Vanilla JS, DOM, ES6+</div>
-        </div>
-        <!--div class="card text-center">
-          <div class="text-2xl neon">React</div><div class="muted mt-1">Component-based UIs</div>
-        </div-->
-        <div class="card text-center">
-          <div class="text-2xl neon">DataBase</div><div class="muted mt-1">MySQL basics</div>
-        </div>
-        <div class="card text-center">
-          <div class="text-2xl neon">Cybersec</div><div class="muted mt-1">Ethical Hacking, Pen Testing, Tools</div>
-        </div>
-      </div>
 
-      <div class="mt-6">
-        <h3 class="neon" style="font-size:1rem">Programming & Tools</h3>
-        <div class="flex flex-wrap gap-3 mt-3">
-          <span class="badge">C</span>
-          <span class="badge">Java</span>
-          <span class="badge">Python</span>
-          <span class="badge">OPENCV</span>
-          <span class="badge">R</span>
-          <span class="badge">C++</span>
-          <span class="badge">DSA</span>
-          <span class="badge">Git & GitHub</span>
-          <span class="badge">VS Code</span>
-          <span class="badge">InteliJ</span>
-          <span class="badge">Linux</span>
-          <span class="badge">N8N</span>
-          <span class="badge">Figma</span>
-          <span class="badge">Canva</span>
-          <span class="badge">HTtrack</span>
-          <span class="badge">Zphisher</span>
-          <span class="badge">Seeker</span>
-          <span class="badge">Ngrok</span>
-          <span class="badge">social-engineer-toolkit</span>
-          <span class="badge">evilginx2</span>
-          <span class="badge">Cisco Packet tracer</span>
-          <span class="badge">Networking</span>
+        <!-- Full Stack -->
+        <div class="card">
+          <h3 class="text-sm font-mono text-cyan-200 mb-3">// 02. FULL-STACK DEVELOPMENT</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="badge border-cyan-400/20">React.js</span>
+            <span class="badge border-cyan-400/20">HTML5 / CSS3</span>
+            <span class="badge border-cyan-400/20">JavaScript (ES6+)</span>
+            <span class="badge border-cyan-400/20">Tailwind CSS</span>
+            <span class="badge border-cyan-400/20">Node.js</span>
+            <span class="badge border-cyan-400/20">Express.js</span>
+            <span class="badge border-cyan-400/20">REST APIs</span>
+          </div>
+        </div>
 
+        <!-- Databases & Cloud -->
+        <div class="card">
+          <h3 class="text-sm font-mono text-cyan-200 mb-3">// 03. DATABASE & DEPLOYMENT</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="badge border-cyan-400/20">MongoDB</span>
+            <span class="badge border-cyan-400/20">MySQL</span>
+            <span class="badge border-cyan-400/20">Render</span>
+            <span class="badge border-cyan-400/20">Netlify</span>
+            <span class="badge border-pink-400/20 text-pink-300">Docker (Learning)</span>
+          </div>
+        </div>
+
+        <!-- Programming -->
+        <div class="card">
+          <h3 class="text-sm font-mono text-cyan-200 mb-3">// 04. LANGUAGES</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="badge border-cyan-400/20">Java</span>
+            <span class="badge border-cyan-400/20">Python</span>
+            <span class="badge border-cyan-400/20">C++</span>
+          </div>
+        </div>
+
+        <!-- Dev Environment -->
+        <div class="card">
+          <h3 class="text-sm font-mono text-cyan-200 mb-3">// 05. DEVELOPMENT TOOLS</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="badge border-cyan-400/20">Git & GitHub</span>
+            <span class="badge border-cyan-400/20">VS Code</span>
+            <span class="badge border-cyan-400/20">IntelliJ IDEA</span>
+            <span class="badge border-cyan-400/20">Linux Shell</span>
+            <span class="badge border-cyan-400/20">Postman</span>
+          </div>
+        </div>
+
+        <!-- CS Core -->
+        <div class="card">
+          <h3 class="text-sm font-mono text-cyan-200 mb-3">// 06. CS FUNDAMENTALS</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="badge border-cyan-400/20">Data Structures & Algorithms</span>
+            <span class="badge border-cyan-400/20">Object-Oriented Programming</span>
+            <span class="badge border-cyan-400/20">Computer Networks</span>
+          </div>
         </div>
       </div>
     </div>
@@ -207,185 +281,578 @@
   <section id="projects">
     <div class="max-w-6xl mx-auto">
       <h2>PROJECT.FILES</h2>
-      <div class="mt-6 grid md:grid-cols-3 gap-6">
-        <!-- Online Counselling -->
-        <!--article class="project-card card">
-          <div class="flex justify-between items-start">
+
+      <!-- FEATURED PROJECT -->
+<div id="featured-project" class="mb-12 hidden-anim">
+  <div class="card p-6 md:p-8 border-cyan-400/20 bg-gradient-to-b from-cyan-950/10 to-transparent">
+    <div class="flex flex-col lg:flex-row gap-8">
+
+      <!-- Left Content -->
+      <div class="lg:w-1/2 flex flex-col justify-between">
+
+        <div>
+
+          <span class="text-xs font-mono text-cyan-200 tracking-wider">// FEATURED SYSTEM</span>
+
+          <h3 class="text-3xl font-extrabold neon-mag mt-1 mb-4" style="font-family:'Orbitron',sans-serif;">
+            EvalAI
+          </h3>
+
+          <p class="text-cyan-100 font-semibold mb-4">
+            AI-Powered Handwritten Answer Sheet Evaluation Platform
+          </p>
+
+          <div class="space-y-4 font-sans text-sm mb-6">
+
             <div>
-              <div class="text-xs font-mono text-cyan-200">PROJECT_001</div>
-              <h3 class="neon mt-1" style="font-size:1.1rem">Online Counselling Platform</h3>
-              <p class="muted mt-2">Responsive multi-page website connecting students & mentors. UX-focused, performance optimized.</p>
-              <div class="mt-3 flex gap-2">
-                <a class="btn-cyber" href="https://github.com/Arshiv341" target="_blank" rel="noopener">GitHub</a>
-                <a class="btn-cyber" href="https://www.linkedin.com/in/ritik-tiwari-it/" target="_blank" rel="noopener" style="border-color:var(--mg); color:var(--mg)">LinkedIn</a>
+              <strong class="text-cyan-300">Overview:</strong>
+              AI-powered platform that evaluates handwritten answer sheets using
+              Google Vision OCR and Gemini AI, automatically generating marks,
+              AI feedback, Excel reports, and analytics dashboards.
+            </div>
+
+            <div>
+              <strong class="text-cyan-300">Architecture Pipeline:</strong>
+
+              <div class="mt-3 grid grid-cols-2 sm:grid-cols-3 gap-2">
+
+                <div class="bg-black/40 border border-cyan-400/10 rounded-lg p-3 text-center">
+                  <div class="text-xl mb-1">📄</div>
+                  <div class="text-[10px] font-mono text-cyan-300">Upload PDFs</div>
+                </div>
+
+                <div class="bg-black/40 border border-cyan-400/10 rounded-lg p-3 text-center">
+                  <div class="text-xl mb-1">🔍</div>
+                  <div class="text-[10px] font-mono text-cyan-300">Vision OCR</div>
+                </div>
+
+                <div class="bg-black/40 border border-cyan-400/10 rounded-lg p-3 text-center">
+                  <div class="text-xl mb-1">🤖</div>
+                  <div class="text-[10px] font-mono text-cyan-300">Gemini AI</div>
+                </div>
+
+                <div class="bg-black/40 border border-cyan-400/10 rounded-lg p-3 text-center">
+                  <div class="text-xl mb-1">⚡</div>
+                  <div class="text-[10px] font-mono text-cyan-300">Queue Processing</div>
+                </div>
+
+                <div class="bg-black/40 border border-cyan-400/10 rounded-lg p-3 text-center">
+                  <div class="text-xl mb-1">🗄️</div>
+                  <div class="text-[10px] font-mono text-cyan-300">MongoDB</div>
+                </div>
+
+                <div class="bg-black/40 border border-cyan-400/10 rounded-lg p-3 text-center">
+                  <div class="text-xl mb-1">📊</div>
+                  <div class="text-[10px] font-mono text-cyan-300">Dashboard</div>
+                </div>
+
               </div>
             </div>
-            <div class="text-xs muted">Status: Live</div>
-          </div>
-        </article-->
 
-        <!-- To-Do App -->
-        <article class="project-card card hidden-anim">
-          <div class="text-xs font-mono text-cyan-200">PROJECT_001</div>
-          <h3 class="neon mt-1">To-Do List App</h3>
-          <p class="muted mt-2">Vanilla JS task manager with localStorage, filters, and animations — great practice for state & UI.</p>
-          <div class="mt-3 flex gap-2">
-            <a class="btn-cyber" href="https://github.com/Arshiv341/SaiketInternship-/commit/0ab61254420f58730ab79744cf746ab9c8212890" target="_blank" rel="noopener">GitHub</a>
-            <!-- <a class="btn-cyber" href="#" onclick="alert('Demo link not set')" style="opacity:.9">Live</a> -->
+            <div>
+              <strong class="text-cyan-300">Impact:</strong>
+              Reduced manual grading effort by
+              <span class="text-cyan-200 font-bold">80%</span>
+              while providing fast, consistent AI evaluation with detailed
+              analytics and automated Excel reports.
+            </div>
+
+          </div>
+
+          <!-- Features -->
+
+          <div class="mb-6">
+
+            <strong class="text-cyan-300 text-sm block mb-3">
+              Core Features
+            </strong>
+
+            <div class="grid grid-cols-2 gap-2 text-xs font-mono">
+
+              <span class="badge border-green-500/30">✔ Bulk Evaluation</span>
+              <span class="badge border-green-500/30">✔ Google Vision OCR</span>
+              <span class="badge border-green-500/30">✔ Gemini AI</span>
+              <span class="badge border-green-500/30">✔ JWT Authentication</span>
+              <span class="badge border-green-500/30">✔ Queue Processing</span>
+              <span class="badge border-green-500/30">✔ Excel Reports</span>
+              <span class="badge border-green-500/30">✔ Analytics Dashboard</span>
+              <span class="badge border-green-500/30">✔ Responsive UI</span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Tech Stack -->
+
+        <div>
+
+          <div class="flex flex-wrap gap-2 mb-4">
+
+            <span class="badge border-cyan-400/20">React</span>
+            <span class="badge border-cyan-400/20">Node.js</span>
+            <span class="badge border-cyan-400/20">Express.js</span>
+            <span class="badge border-cyan-400/20">MongoDB</span>
+            <span class="badge border-cyan-400/20">Google Vision OCR</span>
+            <span class="badge border-cyan-400/20">Gemini AI</span>
+            <span class="badge border-cyan-400/20">JWT</span>
+            <span class="badge border-cyan-400/20">Queue Processing</span>
+            <span class="badge border-cyan-400/20">Excel API</span>
+            <span class="badge border-cyan-400/20">Analytics</span>
+            <span class="badge border-cyan-400/20">Render</span>
+            <span class="badge border-cyan-400/20">Netlify</span>
+
+          </div>
+
+          <div class="flex flex-wrap gap-3">
+
+            <a class="btn-cyber"
+              href="https://github.com/Arshiv341"
+              target="_blank"
+              rel="noopener">
+              💻 GitHub
+            </a>
+
+            <a class="btn-cyber"
+              href="https://home.evalai.dev"
+              target="_blank"
+              rel="noopener"
+              style="border-color:var(--mg);color:var(--mg);">
+              🚀 Live Demo
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Right Side -->
+      <!-- Apni existing project image/video yahin rehne do -->
+       <div class="lg:w-1/2 flex items-center justify-center">
+
+  <div class="relative w-full max-w-[500px] aspect-[16/10] overflow-hidden rounded-xl border border-cyan-400/10 glass group">
+
+    <img
+      src="evalai_preview.png"
+      alt="EvalAI Platform Dashboard"
+      class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105 group-hover:opacity-100 opacity-90"
+      loading="lazy"
+    />
+
+    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+
+    <div class="absolute bottom-3 left-3 right-3">
+      <span class="text-[10px] md:text-xs font-mono text-cyan-300 bg-black/70 px-2 py-1 rounded border border-cyan-500/30">
+        SYSTEM VISUALIZER • PRODUCTION ACTIVE
+      </span>
+    </div>
+
+  </div>
+
+</div>
+      <!-- Is section ko change karne ki zarurat nahi hai -->
+
+    </div>
+  </div>
+</div>
+            
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- OTHER PROJECTS -->
+      <h3 class="text-sm font-mono text-cyan-200 mt-12 mb-6">// DEPLOYED CORE SYSTEMS</h3>
+      <div class="grid md:grid-cols-3 gap-6">
+
+        <!-- 02. MetalMarketin.in -->
+        <article class="project-card card hidden-anim flex flex-col justify-between" aria-label="MetalMarketin.in B2B Metal Marketplace">
+          <div>
+            <div class="flex justify-between items-start">
+              <div class="text-xs font-mono text-cyan-200">PROJECT_002</div>
+              <span class="text-xs text-pink-400 font-mono">B2B Product</span>
+            </div>
+            <h3 class="neon mt-1 text-lg">MetalMarketin.in</h3>
+            <div class="mt-3 space-y-2 text-xs">
+              <div><strong class="text-cyan-300">Project Type:</strong> Full-Stack E-Commerce</div>
+              <div><strong class="text-cyan-300">Problem Solved:</strong> Manual, offline negotiation delays and lack of real-time supply logs in steel trading.</div>
+              <div><strong class="text-cyan-300">Role:</strong> Full Stack Developer</div>
+            </div>
+          </div>
+          <div>
+            <div class="mt-4 flex flex-wrap gap-1.5">
+              <span class="badge text-[10px]">React.js</span>
+              <span class="badge text-[10px]">Java Backend</span>
+              <span class="badge text-[10px]">MySQL</span>
+            </div>
+            <div class="mt-4 flex gap-2">
+              <a class="btn-cyber py-1 text-xs" href="https://metalmarketin.com/" target="_blank" rel="noopener" aria-label="Visit MetalMarketin.in Production Site">Live Project</a>
+            </div>
           </div>
         </article>
 
-        <!-- Quiz App -->
-        <article class="project-card card hidden-anim">
-          <div class="text-xs font-mono text-cyan-200">PROJECT_002</div>
-          <h3 class="neon mt-1">Quiz Application</h3>
-          <p class="muted mt-2">JS-based quiz with timer, scoring and question bank — used for practice & interviews prep.</p>
-          <div class="mt-3 flex gap-2">
-            <a class="btn-cyber" href="https://github.com/Arshiv341/SaiketInternship-/commit/3f86bbf9dae72e8969cde2b4a99c2199a1792486" target="_blank" rel="noopener">GitHub</a>
-            <!-- <a class="btn-cyber" href="#" onclick="alert('Demo link not set')">Live</a> -->
+        <!-- 03. ABES Java Code Editor -->
+        <article class="project-card card hidden-anim flex flex-col justify-between" aria-label="ABES Java Code Editor Desktop IDE">
+          <div>
+            <div class="flex justify-between items-start">
+              <div class="text-xs font-mono text-cyan-200">PROJECT_003</div>
+              <span class="text-xs text-pink-400 font-mono">System App</span>
+            </div>
+            <h3 class="neon mt-1 text-lg">ABES Java Code Editor</h3>
+            <div class="mt-3 space-y-2 text-xs">
+              <div><strong class="text-cyan-300">Project Type:</strong> Desktop IDE Development</div>
+              <div><strong class="text-cyan-300">Problem Solved:</strong> High resource utilization and slow launch cycles of large IDEs for introductory developers.</div>
+              <div><strong class="text-cyan-300">Role:</strong> Lead System Architect</div>
+            </div>
+          </div>
+          <div>
+            <div class="mt-4 flex flex-wrap gap-1.5">
+              <span class="badge text-[10px]">Java</span>
+              <span class="badge text-[10px]">JavaFX</span>
+              <span class="badge text-[10px]">Tomcat Integration</span>
+            </div>
+            <div class="mt-4 flex gap-2">
+              <a class="btn-cyber py-1 text-xs" href="https://github.com/Arshiv341/ABES-java-code-editor" target="_blank" rel="noopener" aria-label="View ABES Java Code Editor repository on GitHub">GitHub</a>
+            </div>
           </div>
         </article>
 
-        <!-- Clone sites -->
-        <!--article class="project-card card">
-          <div class="text-xs font-mono text-cyan-200">PROJECT_004</div>
-          <h3 class="neon mt-1">Clone Websites (UI/UX Practice)</h3>
-          <p class="muted mt-2">Multiple clone projects (Netflix, Amazon UI) to master layouts, grids and responsive breakpoints.</p>
-          <div class="mt-3 flex gap-2">
-            <a class="btn-cyber" href="https://github.com/Arshiv341" target="_blank" rel="noopener">GitHub</a>
+        <!-- 04. Arshiv World -->
+        <article class="project-card card hidden-anim flex flex-col justify-between" aria-label="Arshiv World Admission Counselling Platform">
+          <div>
+            <div class="flex justify-between items-start">
+              <div class="text-xs font-mono text-cyan-200">PROJECT_004</div>
+              <span class="text-xs text-pink-400 font-mono">Web Platform</span>
+            </div>
+            <h3 class="neon mt-1 text-lg">Arshiv World</h3>
+            <div class="mt-3 space-y-2 text-xs">
+              <div><strong class="text-cyan-300">Project Type:</strong> Counselling & Mentoring Site</div>
+              <div><strong class="text-cyan-300">Problem Solved:</strong> Scrambled, non-indexed state counseling details causing high student drop-out rates.</div>
+              <div><strong class="text-cyan-300">Role:</strong> Frontend Developer</div>
+            </div>
           </div>
-        </article-->
-
-        <!-- portfolio -->
-        <article class="project-card card hidden-anim">
-  <div class="text-xs font-mono text-cyan-200">PROJECT_003</div>
-  <h3 class="neon mt-1">Personal Portfolio</h3>
-  <p class="muted mt-2">
-    A neon cyberpunk-themed personal portfolio showcasing my skills, projects, and achievements. 
-    Built using HTML, CSS, Tailwind, and JavaScript — fully responsive and interactive.
-  </p>
-  <div class="mt-3 flex gap-2">
-    <a class="btn-cyber" href="https://github.com/Arshiv341" target="_blank" rel="noopener">
-      GitHub
-    </a>
-    <a class="btn-cyber" href="https://ritiktiwari.netlify.app" target="_blank" rel="noopener">
-      Live
-    </a>
-  </div>
-</article>
-
-
-        <!-- AI Assistant -->
-        <!--article class="project-card card">
-          <div class="text-xs font-mono text-cyan-200">PROJECT_005</div>
-          <h3 class="neon mt-1">Personal AI Assistant (Prototype)</h3>
-          <p class="muted mt-2">Voice/text triggers for automation tasks and info retrieval — experimental prototype.</p>
-          <div class="mt-3 flex gap-2">
-            <a class="btn-cyber" href="https://github.com/Arshiv341" target="_blank" rel="noopener">GitHub</a>
+          <div>
+            <div class="mt-4 flex flex-wrap gap-1.5">
+              <span class="badge text-[10px]">HTML5 / CSS3</span>
+              <span class="badge text-[10px]">JavaScript</span>
+              <span class="badge text-[10px]">EmailJS</span>
+            </div>
+            <div class="mt-4 flex gap-2">
+              <a class="btn-cyber py-1 text-xs" href="https://github.com/Arshiv341/arshiv-world" target="_blank" rel="noopener" aria-label="View Arshiv World repository on GitHub">GitHub</a>
+              <a class="btn-cyber py-1 text-xs" href="https://arshivworld.site/" target="_blank" rel="noopener" aria-label="Visit Arshiv World Live Platform">Live</a>
+            </div>
           </div>
-        </article-->
-        <!-- Price Range Slider -->
-<article class="project-card card hidden-anim">
-  <div class="text-xs font-mono text-cyan-200">PROJECT_004</div>
-  <h3 class="neon mt-1">Price Range Slider (Interactive UI)</h3>
-  <p class="muted mt-2">
-    A modern and responsive price range slider built using <b>HTML, CSS, and JavaScript</b>. 
-    It allows users to dynamically adjust minimum and maximum price values with smooth animations and live input synchronization.
-  </p>
-  <div class="mt-3 flex gap-2">
-    <a class="btn-cyber" href="https://github.com/Arshiv341/Price-Slider" target="_blank" rel="noopener">GitHub</a>
-  </div>
-</article>
-<!-- Resume ATS Checker -->
-<article class="project-card card hidden-anim">
-  <div class="text-xs font-mono text-cyan-200">PROJECT_005</div>
-  <h3 class="neon mt-1">Resume ATS Checker (AI-Powered)</h3>
-  <p class="muted mt-2">
-    An intelligent <b>AI-based Resume ATS Checker</b> built using <b>HTML, CSS, JavaScript, and OpenAI API</b>.  
-    It analyzes resumes in real time, identifies <b>missing keywords</b>, evaluates <b>ATS compatibility</b>, and suggests <b>job profiles</b> best suited for the candidate.
-  </p>
-  <div class="mt-3 flex gap-2">
-    <a class="btn-cyber" href="https://github.com/Arshiv341/ResumeChecker" target="_blank" rel="noopener">GitHub</a>
-     <!-- <a class="btn-cyber" href="https://ritikresumeats.netlify.app/" target="_blank" rel="noopener">Live</a> -->
-  </div>
-</article>
-<!--IMAGE TO URL-->
-<!-- Image Uploader -->
-<article class="project-card card hidden-anim">
-  <div class="text-xs font-mono text-cyan-200">PROJECT_006</div>
-  <h3 class="neon mt-1">Image Uploader (HTML / CSS / JS)</h3>
-  <p class="muted mt-2">
-    A clean and simple image uploader web app that lets users upload, preview, and generate
-    a public shareable URL using the ImgBB API. Features local blob preview, responsive UI,
-    and full client-side functionality — no backend required.
-  </p>
-  <div class="mt-3 flex gap-2">
-    <a class="btn-cyber" href="https://github.com/Arshiv341/Image-To-URL" target="_blank" rel="noopener">GitHub</a>
-    <a class="btn-cyber" href="https://imgseurl.netlify.app/" target="_blank" rel="noopener">Live</a>
-  </div>
-</article>
-<!-- MetalMarketin.in – Full-Stack Platform -->
-<article class="project-card card hidden-anim">
-  <div class="text-xs font-mono text-cyan-200">PROJECT_007</div>
-  <h3 class="neon mt-1">MetalMarketin.in – Full-Stack B2B Metal Marketplace</h3>
+        </article>
 
-  <p class="muted mt-2">
-    A fully functional <b>full-stack B2B e-commerce platform</b> developed 
-    for the client <b>MetalMarketin.in</b>. Built using 
-    <b>Java (Backend), MySQL (Database), and React.js (Frontend)</b>.  
-    The platform streamlines the metal trading process by enabling 
-    <b>product listing, real-time inventory updates, user authentication, 
-    order management, and secure admin controls</b>.
-  </p>
+        <!-- 05. Resume ATS Checker -->
+        <article class="project-card card hidden-anim flex flex-col justify-between" aria-label="Resume ATS Checker tool">
+          <div>
+            <div class="flex justify-between items-start">
+              <div class="text-xs font-mono text-cyan-200">PROJECT_005</div>
+              <span class="text-xs text-pink-400 font-mono">AI Tool</span>
+            </div>
+            <h3 class="neon mt-1 text-lg">Resume ATS Checker</h3>
+            <div class="mt-3 space-y-2 text-xs">
+              <div><strong class="text-cyan-300">Project Type:</strong> Recruiting Technology</div>
+              <div><strong class="text-cyan-300">Problem Solved:</strong> Candidates failing automated filter sweeps due to minor formatting discrepancies.</div>
+              <div><strong class="text-cyan-300">Role:</strong> Creator</div>
+            </div>
+          </div>
+          <div>
+            <div class="mt-4 flex flex-wrap gap-1.5">
+              <span class="badge text-[10px]">JavaScript</span>
+              <span class="badge text-[10px]">OpenAI API</span>
+              <span class="badge text-[10px]">Tailwind</span>
+            </div>
+            <div class="mt-4 flex gap-2">
+              <a class="btn-cyber py-1 text-xs" href="https://github.com/Arshiv341/ResumeChecker" target="_blank" rel="noopener" aria-label="View Resume ATS Checker repository on GitHub">GitHub</a>
+            </div>
+          </div>
+        </article>
 
-  <p class="muted mt-2">
-    This project is <b>client-exclusive</b>, so the source code is private.  
-    A live preview is available below.
-  </p>
+        <!-- 06. Personal Portfolio -->
+        <article class="project-card card hidden-anim flex flex-col justify-between" aria-label="Developer Personal Portfolio website">
+          <div>
+            <div class="flex justify-between items-start">
+              <div class="text-xs font-mono text-cyan-200">PROJECT_006</div>
+              <span class="text-xs text-pink-400 font-mono">Portfolio</span>
+            </div>
+            <h3 class="neon mt-1 text-lg">Personal Portfolio</h3>
+            <div class="mt-3 space-y-2 text-xs">
+              <div><strong class="text-cyan-300">Project Type:</strong> Personal Branding</div>
+              <div><strong class="text-cyan-300">Problem Solved:</strong> Recruiter fatigue from looking at static paper PDF resumes with no visual engineering evidence.</div>
+              <div><strong class="text-cyan-300">Role:</strong> Designer & Developer</div>
+            </div>
+          </div>
+          <div>
+            <div class="mt-4 flex flex-wrap gap-1.5">
+              <span class="badge text-[10px]">HTML5 / CSS</span>
+              <span class="badge text-[10px]">JavaScript</span>
+              <span class="badge text-[10px]">Tailwind</span>
+            </div>
+            <div class="mt-4 flex gap-2">
+              <a class="btn-cyber py-1 text-xs" href="https://github.com/Arshiv341" target="_blank" rel="noopener" aria-label="View Portfolio repository on GitHub">GitHub</a>
+              <a class="btn-cyber py-1 text-xs" href="https://ritiktiwari.netlify.app" target="_blank" rel="noopener" aria-label="Visit Portfolio Live Site">Live</a>
+            </div>
+          </div>
+        </article>
 
-  <div class="mt-3 flex gap-2">
-    <a class="btn-cyber" href="https://metalmarketin.com/" target="_blank" rel="noopener">Live Project</a>
-  </div>
-</article>
-<article class="project-card card hidden-anim">
-  <div class="text-xs font-mono text-cyan-200">PROJECT_008</div>
-  <h3 class="neon mt-1">Arshiv World – Admission Counselling Platform</h3>
-  <p class="muted mt-2">
-    A fully responsive and SEO-optimized admission counselling platform built using
-    HTML, CSS, and JavaScript. The website provides end-to-end guidance for RTE Admission,
-    JEECUP, JOSAA, CSAB, UPTAC, CUET, and top government & private universities across India.
-    It features EmailJS-powered query submission, professional UI/UX, trust-focused
-    content structure, and a production-ready frontend with no backend dependency.
-  </p>
-  <div class="mt-3 flex gap-2">
-    <a class="btn-cyber" href="https://github.com/Arshiv341/arshiv-world" target="_blank" rel="noopener">
-      GitHub
-    </a>
-    <a class="btn-cyber" href="https://arshivworld.site/" target="_blank" rel="noopener">
-      Live
-    </a>
-  </div>
-</article>
-<article class="project-card card hidden-anim">
-  <div class="text-xs font-mono text-cyan-200">PROJECT_009</div>
-  <h3 class="neon mt-1">ABES Java Code Editor – Custom Java IDE with Embedded Tomcat</h3>
-  <p class="muted mt-2">
-    A custom Java-based IDE built using Java and JavaFX to understand how real development 
-    environments handle compilation, execution, and file management. Version 0.1 supports 
-    Java program compile & run features, while Version 0.2 integrates Embedded Apache Tomcat (10.x) 
-    for local web app deployment and internal server start/stop management. 
-    Demonstrates practical experience in modular Java architecture and embedded server integration.
-  </p>
-  <div class="mt-3 flex gap-2">
-    <a class="btn-cyber" href="https://github.com/Arshiv341/ABES-java-code-editor" target="_blank" rel="noopener">
-      GitHub
-    </a>
-  </div>
-</article>
+        <!-- 07. Image Uploader -->
+        <article class="project-card card hidden-anim flex flex-col justify-between" aria-label="Image Uploader Utility">
+          <div>
+            <div class="flex justify-between items-start">
+              <div class="text-xs font-mono text-cyan-200">PROJECT_007</div>
+              <span class="text-xs text-pink-400 font-mono">API Tool</span>
+            </div>
+            <h3 class="neon mt-1 text-lg">Image Uploader</h3>
+            <div class="mt-3 space-y-2 text-xs">
+              <div><strong class="text-cyan-300">Project Type:</strong> API Utility integration</div>
+              <div><strong class="text-cyan-300">Problem Solved:</strong> Complicated, slow CDN generation for forum posts and markdown document rendering.</div>
+              <div><strong class="text-cyan-300">Role:</strong> Developer</div>
+            </div>
+          </div>
+          <div>
+            <div class="mt-4 flex flex-wrap gap-1.5">
+              <span class="badge text-[10px]">HTML5</span>
+              <span class="badge text-[10px]">JavaScript</span>
+              <span class="badge text-[10px]">ImgBB API</span>
+            </div>
+            <div class="mt-4 flex gap-2">
+              <a class="btn-cyber py-1 text-xs" href="https://github.com/Arshiv341/Image-To-URL" target="_blank" rel="noopener" aria-label="View Image Uploader repository on GitHub">GitHub</a>
+              <a class="btn-cyber py-1 text-xs" href="https://imgseurl.netlify.app/" target="_blank" rel="noopener" aria-label="Visit Image Uploader Live Site">Live</a>
+            </div>
+          </div>
+        </article>
 
+        <!-- 08. Price Range Slider -->
+        <article class="project-card card hidden-anim flex flex-col justify-between" aria-label="Price Range Slider UI component">
+          <div>
+            <div class="flex justify-between items-start">
+              <div class="text-xs font-mono text-cyan-200">PROJECT_008</div>
+              <span class="text-xs text-pink-400 font-mono">UI Element</span>
+            </div>
+            <h3 class="neon mt-1 text-lg">Price Range Slider</h3>
+            <div class="mt-3 space-y-2 text-xs">
+              <div><strong class="text-cyan-300">Project Type:</strong> UI/UX Component</div>
+              <div><strong class="text-cyan-300">Problem Solved:</strong> Jittery, non-fluid slider range values in product search directories.</div>
+              <div><strong class="text-cyan-300">Role:</strong> UI Developer</div>
+            </div>
+          </div>
+          <div>
+            <div class="mt-4 flex flex-wrap gap-1.5">
+              <span class="badge text-[10px]">HTML5</span>
+              <span class="badge text-[10px]">CSS Grid</span>
+              <span class="badge text-[10px]">JavaScript</span>
+            </div>
+            <div class="mt-4 flex gap-2">
+              <a class="btn-cyber py-1 text-xs" href="https://github.com/Arshiv341/Price-Slider" target="_blank" rel="noopener" aria-label="View Price Range Slider repository on GitHub">GitHub</a>
+            </div>
+          </div>
+        </article>
 
+        <!-- 09. To-Do List App -->
+        <article class="project-card card hidden-anim flex flex-col justify-between" aria-label="To-Do List App task manager">
+          <div>
+            <div class="flex justify-between items-start">
+              <div class="text-xs font-mono text-cyan-200">PROJECT_009</div>
+              <span class="text-xs text-pink-400 font-mono">App Utility</span>
+            </div>
+            <h3 class="neon mt-1 text-lg">To-Do List App</h3>
+            <div class="mt-3 space-y-2 text-xs">
+              <div><strong class="text-cyan-300">Project Type:</strong> Basic Task Utility</div>
+              <div><strong class="text-cyan-300">Problem Solved:</strong> Simple task scheduling without browser tab lifecycle data persistence.</div>
+              <div><strong class="text-cyan-300">Role:</strong> Intern Developer</div>
+            </div>
+          </div>
+          <div>
+            <div class="mt-4 flex flex-wrap gap-1.5">
+              <span class="badge text-[10px]">HTML5 / CSS</span>
+              <span class="badge text-[10px]">JavaScript</span>
+              <span class="badge text-[10px]">Local Storage</span>
+            </div>
+            <div class="mt-4 flex gap-2">
+              <a class="btn-cyber py-1 text-xs" href="https://github.com/Arshiv341/SaiketInternship-" target="_blank" rel="noopener" aria-label="View To-Do List App repository on GitHub">GitHub</a>
+            </div>
+          </div>
+        </article>
 
-        <!-- Add more -->
+        <!-- 10. Quiz Application -->
+        <article class="project-card card hidden-anim flex flex-col justify-between" aria-label="Quiz Application testing tool">
+          <div>
+            <div class="flex justify-between items-start">
+              <div class="text-xs font-mono text-cyan-200">PROJECT_010</div>
+              <span class="text-xs text-pink-400 font-mono">App Utility</span>
+            </div>
+            <h3 class="neon mt-1 text-lg">Quiz Application</h3>
+            <div class="mt-3 space-y-2 text-xs">
+              <div><strong class="text-cyan-300">Project Type:</strong> Interactive Quiz App</div>
+              <div><strong class="text-cyan-300">Problem Solved:</strong> Complex timer-based questionnaire orchestration with state validation.</div>
+              <div><strong class="text-cyan-300">Role:</strong> Intern Developer</div>
+            </div>
+          </div>
+          <div>
+            <div class="mt-4 flex flex-wrap gap-1.5">
+              <span class="badge text-[10px]">JavaScript</span>
+              <span class="badge text-[10px]">DOM Controls</span>
+              <span class="badge text-[10px]">Timer API</span>
+            </div>
+            <div class="mt-4 flex gap-2">
+              <a class="btn-cyber py-1 text-xs" href="https://github.com/Arshiv341/SaiketInternship-" target="_blank" rel="noopener" aria-label="View Quiz Application repository on GitHub">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS & CERTIFICATIONS -->
+  <section id="achievements" class="bg-black/10 hidden-anim">
+    <div class="max-w-6xl mx-auto">
+      <h2>SYSTEM.ACHIEVEMENTS</h2>
+      <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        
+        <!-- Achievement 1 -->
+        <div class="card flex flex-col justify-between border-magenta-500/20" aria-label="Saitech Systems Intern Achievement">
+          <div>
+            <div class="text-xs font-mono text-pink-400 mb-2">// 01. PROFESSIONAL</div>
+            <h3 class="neon text-lg">Frontend Developer Intern</h3>
+            <p class="muted mt-2 text-xs">Saitech Systems — Developed and optimized user-facing responsive React interfaces and integrated REST APIs.</p>
+          </div>
+          <div class="mt-4 text-xs font-mono text-cyan-200">Status: Verified ✔</div>
+        </div>
+
+        <!-- Achievement 2 -->
+        <div class="card flex flex-col justify-between border-magenta-500/20" aria-label="EvalAI Creator Achievement">
+          <div>
+            <div class="text-xs font-mono text-pink-400 mb-2">// 02. INNOVATION</div>
+            <h3 class="neon text-lg">Creator of EvalAI</h3>
+            <p class="muted mt-2 text-xs">Designed and deployed the AI + OCR answersheet evaluation software, speeding up manual grading by 80%.</p>
+          </div>
+          <div class="mt-4 text-xs font-mono text-cyan-200">Status: Deployed 🚀</div>
+        </div>
+
+        <!-- Achievement 3 -->
+        <div class="card flex flex-col justify-between border-cyan-500/20" aria-label="Cisco Networking Certification">
+          <div>
+            <div class="text-xs font-mono text-cyan-200 mb-2">// 03. CREDENTIAL</div>
+            <h3 class="neon text-lg">Cisco Certification</h3>
+            <p class="muted mt-2 text-xs">Credentialed in core networking protocols, routing systems, and secure infrastructure configurations.</p>
+          </div>
+          <div class="mt-4 text-xs font-mono text-cyan-200">Authority: Cisco Academy</div>
+        </div>
+
+        <!-- Achievement 4 -->
+        <div class="card flex flex-col justify-between border-cyan-500/20" aria-label="ISRO Certification">
+          <div>
+            <div class="text-xs font-mono text-cyan-200 mb-2">// 04. CREDENTIAL</div>
+            <h3 class="neon text-lg">ISRO Certification</h3>
+            <p class="muted mt-2 text-xs">Completed space technology training, remote sensing applications, and high-performance mapping systems.</p>
+          </div>
+          <div class="mt-4 text-xs font-mono text-cyan-200">Authority: ISRO (IIRS)</div>
+        </div>
+
+        <!-- Achievement 5 -->
+        <div class="card flex flex-col justify-between border-cyan-500/20" aria-label="Infosys Certification">
+          <div>
+            <div class="text-xs font-mono text-cyan-200 mb-2">// 05. CREDENTIAL</div>
+            <h3 class="neon text-lg">Infosys Certification</h3>
+            <p class="muted mt-2 text-xs">Certified in enterprise systems development, databases, and Object-Oriented Programming principles.</p>
+          </div>
+          <div class="mt-4 text-xs font-mono text-cyan-200">Authority: Infosys Springboard</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE / TECH JOURNEY -->
+  <section id="timeline" class="bg-black/20 hidden-anim">
+    <div class="max-w-6xl mx-auto">
+      <h2>TECH.JOURNEY</h2>
+      
+      <!-- Cyber Timeline Layout -->
+      <div class="mt-8 relative border-l border-cyan-500/20 pl-6 ml-4 space-y-8">
+        
+        <!-- Point 1 -->
+        <div class="relative">
+          <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-cyan-400 shadow-[0_0_8px_var(--cy)] border-4 border-black"></div>
+          <div class="text-xs font-mono text-cyan-300">2023</div>
+          <h4 class="neon text-sm font-semibold mt-1">Started Web Development</h4>
+          <p class="muted text-xs mt-1">Mastered semantic HTML5 layouts, styled responsive grids with CSS3, and explored client logic using Vanilla JavaScript.</p>
+        </div>
+
+        <!-- Point 2 -->
+        <div class="relative">
+          <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-cyan-400 shadow-[0_0_8px_var(--cy)] border-4 border-black"></div>
+          <div class="text-xs font-mono text-cyan-300">LATE 2023 - EARLY 2024</div>
+          <h4 class="neon text-sm font-semibold mt-1">Frontend Engineering & React</h4>
+          <p class="muted text-xs mt-1">Transitioned to state management frameworks. Built dynamic user dashboards, single-page application routers, and custom Hooks in React.js.</p>
+        </div>
+
+        <!-- Point 3 -->
+        <div class="relative">
+          <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-cyan-400 shadow-[0_0_8px_var(--cy)] border-4 border-black"></div>
+          <div class="text-xs font-mono text-cyan-300">MID 2024</div>
+          <h4 class="neon text-sm font-semibold mt-1">Node.js, Express & MongoDB</h4>
+          <p class="muted text-xs mt-1">Expanded into backend software engineering. Built REST APIs, handled database modelling with MongoDB, and designed user sessions with JWT auth.</p>
+        </div>
+
+        <!-- Point 4 -->
+        <div class="relative">
+          <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-magenta-500 shadow-[0_0_8px_var(--mg)] border-4 border-black"></div>
+          <div class="text-xs font-mono text-pink-300">2025 - 2026</div>
+          <h4 class="neon-mag text-sm font-semibold mt-1">AI + OCR Systems & EvalAI</h4>
+          <p class="muted text-xs mt-1">Engineered specialized OCR workflows utilizing Google Cloud Vision and Gemini API. Conceived, designed, and deployed EvalAI to automate exam evaluation.</p>
+        </div>
+
+        <!-- Point 5 -->
+        <div class="relative">
+          <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-green-400 shadow-[0_0_8px_#0f0] border-4 border-black"></div>
+          <div class="text-xs font-mono text-green-400">CURRENT</div>
+          <h4 class="text-green-300 text-sm font-semibold mt-1">Building Production AI Applications</h4>
+          <p class="muted text-xs mt-1">Optimizing scalable full-stack servers, refining LLM system prompts, and designing automated enterprise pipelines.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CURRENT FOCUS -->
+  <section id="focus" class="bg-black/10 hidden-anim">
+    <div class="max-w-6xl mx-auto">
+      <h2>CURRENT.FOCUS</h2>
+      <p class="muted mb-6">Actively studying systems architecture and cloud orchestrations to deploy high-scale, fault-tolerant software products.</p>
+      
+      <div class="grid grid-cols-2 sm:grid-cols-5 gap-4">
+        
+        <div class="card text-center border-magenta-500/10">
+          <div class="text-xl neon">Docker</div>
+          <div class="muted text-xs mt-1">Containerization & Services</div>
+        </div>
+
+        <div class="card text-center border-magenta-500/10">
+          <div class="text-xl neon">Redis</div>
+          <div class="muted text-xs mt-1">In-Memory Cache & Queues</div>
+        </div>
+
+        <div class="card text-center border-magenta-500/10">
+          <div class="text-xl neon">System Design</div>
+          <div class="muted text-xs mt-1">Scalability & Microservices</div>
+        </div>
+
+        <div class="card text-center border-magenta-500/10">
+          <div class="text-xl neon">AWS</div>
+          <div class="muted text-xs mt-1">Cloud Infrastructure</div>
+        </div>
+
+        <div class="card text-center border-magenta-500/10">
+          <div class="text-xl neon">Kubernetes</div>
+          <div class="muted text-xs mt-1">Container Orchestration</div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -398,6 +865,10 @@
         <div class="card">
           <h3 class="neon">Get in touch</h3>
           <p class="muted mt-2">For internships, collaborations or hiring, drop a message — I reply within 48 hours.</p>
+          <div class="mt-4 p-3 rounded border border-green-500/20 bg-green-950/10 text-xs font-mono">
+            <span class="text-green-400 font-semibold">🟢 Currently Open For:</span>
+            <div class="text-cyan-300 mt-1">Software Engineering Internship | AI Internship | Full Stack Internship</div>
+          </div>
           <div class="mt-4">
             <div class="text-sm font-mono text-cyan-200">Email</div>
             <div class="muted">drritik341@gmail.com</div>
@@ -411,13 +882,13 @@
   <h3 class="neon">Send a message</h3>
 
   <form id="contact-form" onsubmit="handleContact(event)" class="mt-3 space-y-3">
-    <input required name="name" class="w-full cyber-input p-3 rounded" placeholder="Your name" />
-    <input required type="email" name="email" class="w-full cyber-input p-3 rounded" placeholder="Your email" />
-    <textarea required name="message" rows="4" class="w-full cyber-input p-3 rounded" placeholder="Message..."></textarea>
+    <input required name="name" class="w-full cyber-input p-3 rounded" placeholder="Your name" aria-label="Your Name" />
+    <input required type="email" name="email" class="w-full cyber-input p-3 rounded" placeholder="Your email" aria-label="Your Email Address" />
+    <textarea required name="message" rows="4" class="w-full cyber-input p-3 rounded" placeholder="Message..." aria-label="Your Message"></textarea>
     
     <div class="flex gap-3">
-      <button class="btn-cyber" type="submit">TRANSMIT</button>
-      <a class="btn-cyber" href="./Fin.pdf" download style="border-color:var(--mg); color:var(--mg)">DOWNLOAD RESUME</a>
+      <button class="btn-cyber" type="submit" aria-label="Transmit message to Ritik Tiwari">TRANSMIT</button>
+      <a class="btn-cyber" href="./Fin.pdf" download style="border-color:var(--mg); color:var(--mg)" aria-label="Download Resume PDF">DOWNLOAD RESUME</a>
     </div>
 
     <div id="contact-msg" class="mt-2 text-sm muted" style="display:none"></div>
@@ -469,8 +940,9 @@
       </a>
     </div>
 <!-- Copyright -->
-<div class="muted text-sm mt-4">
-  © 2025 ऋतिक तिवारी | All rights reserved
+<div class="muted text-sm mt-4 space-y-1">
+  <div>© 2026 Ritik Tiwari | All rights reserved</div>
+  <div class="text-xs text-cyan-400/60 font-mono">Built with HTML • CSS • JavaScript</div>
 </div>
 
   </div>
